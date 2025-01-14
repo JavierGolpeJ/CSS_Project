@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Little Tacos Contact</title>
+    <link rel="stylesheet" href="little_tacos.css">
+</head>
+
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="home.html#about">About LTS</a></li>
+                <li><a href="home.html#menu">Our Menu</a></li>
+                <li><a href="store_hours.html#hours">Store Hours</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <figure>
+        <img src="img2/tacos3.jpg" alt="Tacos" title="Tacos" width="500" height="500">
+        <figcaption>Little Tacos Shop Tacos</figcaption>
+    </figure>
+
+    <article id="contact">
+        <h2>Our Contact Form</h2>
+        <form action="https://httpbin.org/get" method="get">
+            <fieldset>
+                <legend>Send Us a Message</legend>
+                <p>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="your name" required>
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="your email" required>
+                </p>
+                <label for="message">Message:</label>
+                <br>
+                <textarea id="message" cols="30" rows="10" name="message" placeholder="Type your message"
+                    required></textarea>
+            </fieldset>
+        </form>
+
+        <button type="submit">Send</button>
+        <button type="reset">Reset</button>
+
+        <h2>Our Location</h2>
+
+        <address>
+            <p>Little Taco Shop 123 Main Street Anytown,<br> Kansas City, MO 555-555-5555 </p>
+        </address>
+
+        <p>Phone:<a href="tel:">555-555-5555</a></p>
+        <p><a href="#">Back to Top</a></p>
+        <hr>
+    </article>
+
+</body>
+
+</html>
