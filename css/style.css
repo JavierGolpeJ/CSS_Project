@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap');
+
+
+/* Reset */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+input, button, textarea {
+    font: inherit;
+}
+
+/* Variables */
+
+:root {
+    /* Fonts */
+    --FF: -apple-system, sans-serif;
+    --FF-HEADINGS: "Funnel Display", sans-serif;
+    --FS: clamp(1rem, 2.2vh, 1.5rem);
+
+    /* Colors */
+    --BGCOLOR: orange;
+    --BGCOLOR-FADE: RGB(252, 220, 160);
+    --BGIMAGE: linear-gradient(to bottom, var(--BGCOLOR), var(--BGCOLOR-FADE));
+    --BODY-BGCOLOR: #FFF;
+    --FONT-COLOR: #000;
+    --BORDER-COLOR: #333;
+
+    /* Borders */
+    --BORDERS: 1px solid var(--BORDER-COLOR);
+}
+
+/* Utilities */
+
+.offscreen {
+    position: absolute;
+    left: -10000;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.center {
+    text-align: center;
+}
+
+/* General Styles */
+
+html {
+    scroll-behavior: smooth;
+    font-size: var(--FS);
+    font-family: var(--FF);
+    background-color: var(--BGCOLOR);
+    background-image: var(--BGIMAGE);
+}
+
+body {
+    background-color: var(--BODY-BGCOLOR);
+    color: var(--FONT-COLOR);
+    min-height: 100vh;
+    max-width: 800px;
+    margin: 0 auto;
+    border-left: var(--BORDERS);
+    border-right: var(--BORDERS);
+    box-shadow: 0 0 10px var(--BORDER-COLOR);
+}
+
+h1, h2, h3 {
+    font-family: var(--FF-HEADINGS);
+    letter-spacing: 0.1em;
+}
