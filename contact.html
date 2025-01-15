@@ -13,8 +13,8 @@
         <h1 class="header__h1">Contact Us</h1>
         <nav class="header__nav">
             <ul class="header__ul">
-                <li><a href="/">Home</a></li>
-                <li><a href="/#menu">Menu</a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="home.html#menu">Menu</a></li>
                 <li><a href="store_hours.html">Hours</a></li>
                 <li><a href="about.html">About</a></li>
             </ul>
@@ -23,45 +23,53 @@
 
     <section class="hero">
         <figure>
-            <img src="img2/tacos3.jpg" alt="Tripple Tacos" title="Tacos" width="500" height="500">
+            <img src="img/tacos3.jpg" alt="Tripple Tacos" title="Tacos" width="500" height="500">
             <figcaption class="offscreen">Little Tacos Shop Tacos</figcaption>
         </figure>
     </section>
 
-    <article id="contact">
-        <h2>Our Contact Form</h2>
-        <form action="https://httpbin.org/get" method="get">
-            <fieldset>
-                <legend>Send Us a Message</legend>
-                <p>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" placeholder="your name" required>
-                </p>
-                <p>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" placeholder="your email" required>
-                </p>
-                <label for="message">Message:</label>
-                <br>
-                <textarea id="message" cols="30" rows="10" name="message" placeholder="Type your message"
-                    required></textarea>
-            </fieldset>
-        </form>
+    <main class="main">
+        <article class="main__article" contact>
+            <h2 class="contact__h2">Our Location</h2>
 
-        <button type="submit">Send</button>
-        <button type="reset">Reset</button>
+            <address>
+                <p>Little Taco Shop 123 Main Street Anytown,<br> Kansas City, MO 555-555-5555 </p>
+            </address>
 
-        <h2>Our Location</h2>
+            <p>Phone:<a href="tel:">555-555-5555</a></p>
+            <p><a href="#">Back to Top</a></p>
+        </article>
+        <article class="main__article">
+            <h2>Our Contact Form</h2>
 
-        <address>
-            <p>Little Taco Shop 123 Main Street Anytown,<br> Kansas City, MO 555-555-5555 </p>
-        </address>
+            <form action="https://httpbin.org/get" method="get" class="contact__form">
+                <fieldset class="contact__fieldset">
+                    <legend class="offscreen">Send Us a Message</legend>
+                    <p class="contact__p">
+                        <label class="contact__label" for="name">Name:</label>
+                        <input class="contact__input" type="text" id="name" name="name" placeholder="your name" required>
+                    </p>
+                    <p class="contact__p">
+                        <label class="contact__label" for="email">Email:</label>
+                        <input class="contact__input" type="email" id="email" name="email" placeholder="your email" required>
+                    </p>
+                    <label class="contact__label" for="message">Message:</label>
+                    <br>
+                    <textarea id="message" class="contact__textarea" cols="30" rows="10" name="message" placeholder="Type your message"
+                        required></textarea>
+                </fieldset>
 
-        <p>Phone:<a href="tel:">555-555-5555</a></p>
-        <p><a href="#">Back to Top</a></p>
-        <hr>
-    </article>
 
+                <button class="contact__button" type="submit">Send</button>
+                <button class="contact__button" type="reset">Reset</button>
+            </form>
+        </article>
+        
+    </main>
+
+    <footer class="footer">
+        <p><span class="nowrap">Copyright &copy;</span> <span class="nowrap">Little Taco Shop</span></p>
+    </footer>
 </body>
 
 </html>
